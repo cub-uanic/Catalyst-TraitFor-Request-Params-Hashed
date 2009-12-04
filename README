@@ -1,55 +1,120 @@
-Catalyst-TraitFor-Request-Params-Hashed
+NAME
+    Catalyst::TraitFor::Request::Params::Hashed - Access to parameters like
+    "name[index]" as hashes for Catalyst::Request.
 
-The README is used to introduce the module and provide instructions on
-how to install the module, any machine dependencies it may have (for
-example C compilers and installed libraries) and any other information
-that should be provided before the module is installed.
+SYNOPSIS
+        #
+        # application class
+        #
+        package TestApp;
 
-A README file is required for CPAN modules since CPAN extracts the README
-file from a module distribution so that people browsing the archive
-can use it to get an idea of the module's uses. It is usually a good idea
-to provide version information here so that people can decide whether
-fixes for the module are worth downloading.
+        use Moose;
+        use namespace::autoclean;
+        use Catalyst qw/ ......... /;
+        extends 'Catalyst';
+        use CatalystX::RoleApplicator;
+    
+        __PACKAGE__->apply_request_class_roles(qw/
+            Catalyst::TraitFor::Request::Params::Hashed
+        /);
 
+        #
+        # controller class
+        #
+        package TestApp::Controller::Test;
+        .........
+            # query string was like
+            # site[name1]=100&site[name1]=150&site[name2]=200
+            my $site = $c->req->hashed_params->{site};
 
-INSTALLATION
+            # $site is hashref:
+            #
+            # $site = {
+            #   name1 => [100, 150],
+            #   name2 => 200,
+            # }
+        .........
 
-To install this module, run the following commands:
+DESCRIPTION
+    You can access "hashed_parameters", "hashed_query_parameters",
+    "hashed_body_parameters" to get access to parameters as to hashes. Also
+    you can use "hashes_params", "hashed_query_params" and
+    "hashed_body_params" as shortcuts. Or, if you too lazy, you can use
+    "hparams", "hquery_params" and "hbody_params" :)
 
-	perl Makefile.PL
-	make
-	make test
-	make install
+    Note, that this trait gives you read-only version of "params",
+    "query_params" and "body_params" respectively. Also note, that any
+    change to any of three above <WILL NOT HAVE> any effect to all of
+    "hashed*params".
 
-SUPPORT AND DOCUMENTATION
+METHODS
+  hashed_params
+  hparams
+  hashed_query_params
+  hquery_params
+  hashed_body_params
+  hbody_params
+TODO
+    Write tests.
 
-After installing, you can find documentation for this module with the
-perldoc command.
+REPOSITORY
+    Project is hosted at GitHub:
 
-    perldoc Catalyst::TraitFor::Request::Params::Hashed
+        git://github.com/cub-uanic/c-t-request-params-hashed.git
 
-You can also look for information at:
+SEE ALSO
+    Catalyst, Catalyst::Request,
+    "Catalyst::TraitFor::Request::BrowserDetect"
 
-    RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Catalyst-TraitFor-Request-Params-Hashed
+AUTHOR
+    Oleg Kostyuk, "<cub at cpan.org>"
 
-    AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Catalyst-TraitFor-Request-Params-Hashed
+COPYRIGHT & LICENSE
+    Copyright 2009 Oleg Kostyuk.
 
-    CPAN Ratings
-        http://cpanratings.perl.org/d/Catalyst-TraitFor-Request-Params-Hashed
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of either: the GNU General Public License as published
+    by the Free Software Foundation; or the Artistic License.
 
-    Search CPAN
-        http://search.cpan.org/dist/Catalyst-TraitFor-Request-Params-Hashed/
+    See http://dev.perl.org/licenses/ for more information.
 
+POD ERRORS
+    Hey! The above document had some coding errors, which are explained
+    below:
 
-COPYRIGHT AND LICENCE
+    Around line 113:
+        You forgot a '=back' before '=head2'
 
-Copyright (C) 2009 Oleg Kostyuk
+    Around line 115:
+        =back without =over
 
-This program is free software; you can redistribute it and/or modify it
-under the terms of either: the GNU General Public License as published
-by the Free Software Foundation; or the Artistic License.
+    Around line 119:
+        You forgot a '=back' before '=head2'
 
-See http://dev.perl.org/licenses/ for more information.
+    Around line 121:
+        =back without =over
+
+    Around line 125:
+        You forgot a '=back' before '=head2'
+
+    Around line 127:
+        =back without =over
+
+    Around line 131:
+        You forgot a '=back' before '=head2'
+
+    Around line 133:
+        =back without =over
+
+    Around line 137:
+        You forgot a '=back' before '=head2'
+
+    Around line 139:
+        =back without =over
+
+    Around line 143:
+        You forgot a '=back' before '=head2'
+
+    Around line 145:
+        =back without =over
 
