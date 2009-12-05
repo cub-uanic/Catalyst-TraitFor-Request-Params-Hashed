@@ -4,12 +4,16 @@ use namespace::autoclean;
 use Moose::Role;
 use MooseX::Types::Moose qw/ HashRef /;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
 Catalyst::TraitFor::Request::Params::Hashed - Access to parameters
 like C<name[index]> as hashes for Catalyst::Request.
+
+=head1 VERSION
+
+Version is 0.02
 
 =head1 SYNOPSIS
 
@@ -110,39 +114,15 @@ sub _build_hashed_body_parameters {
 
 =head2 hashed_params
 
-=over
-
-=back
-
 =head2 hparams
-
-=over
-
-=back
 
 =head2 hashed_query_params
 
-=over
-
-=back
-
 =head2 hquery_params
-
-=over
-
-=back
 
 =head2 hashed_body_params
 
-=over
-
-=back
-
 =head2 hbody_params
-
-=over
-
-=back
 
 =cut
 
@@ -157,19 +137,29 @@ sub hbody_params        { shift->hashed_body_parameters }
 
 Write tests.
 
-=head1 REPOSITORY
-
-Project is hosted at GitHub:
-
-    git://github.com/cub-uanic/c-t-request-params-hashed.git
-
 =head1 SEE ALSO
 
 L<Catalyst>, L<Catalyst::Request>, C<Catalyst::TraitFor::Request::BrowserDetect>
 
+=head1 SUPPORT
+
+=over 4
+
+=item * Report bugs or feature requests
+
+L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-TraitFor-Request-Params-Hashed>
+
+L<http://www.assembla.com/spaces/Catalyst-TraitFor-Request-Params-Hashed/tickets>
+
+=item * Git repository
+
+git clone git://git.assembla.com/Catalyst-TraitFor-Request-Params-Hashed.git
+
+=back
+
 =head1 AUTHOR
 
-Oleg Kostyuk, C<< <cub at cpan.org> >>
+Oleg Kostyuk, C<< <cub#cpan.org> >>
 
 =head1 COPYRIGHT & LICENSE
 

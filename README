@@ -2,6 +2,9 @@ NAME
     Catalyst::TraitFor::Request::Params::Hashed - Access to parameters like
     "name[index]" as hashes for Catalyst::Request.
 
+VERSION
+    Version is 0.02
+
 SYNOPSIS
         #
         # application class
@@ -57,17 +60,26 @@ METHODS
 TODO
     Write tests.
 
-REPOSITORY
-    Project is hosted at GitHub:
-
-        git://github.com/cub-uanic/c-t-request-params-hashed.git
-
 SEE ALSO
     Catalyst, Catalyst::Request,
     "Catalyst::TraitFor::Request::BrowserDetect"
 
+SUPPORT
+    *   Report bugs or feature requests
+
+        <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-TraitFor-Re
+        quest-Params-Hashed>
+
+        <http://www.assembla.com/spaces/Catalyst-TraitFor-Request-Params-Has
+        hed/tickets>
+
+    *   Git repository
+
+        git clone
+        git://git.assembla.com/Catalyst-TraitFor-Request-Params-Hashed.git
+
 AUTHOR
-    Oleg Kostyuk, "<cub at cpan.org>"
+    Oleg Kostyuk, "<cub#cpan.org>"
 
 COPYRIGHT & LICENSE
     Copyright 2009 Oleg Kostyuk.
@@ -77,44 +89,4 @@ COPYRIGHT & LICENSE
     by the Free Software Foundation; or the Artistic License.
 
     See http://dev.perl.org/licenses/ for more information.
-
-POD ERRORS
-    Hey! The above document had some coding errors, which are explained
-    below:
-
-    Around line 113:
-        You forgot a '=back' before '=head2'
-
-    Around line 115:
-        =back without =over
-
-    Around line 119:
-        You forgot a '=back' before '=head2'
-
-    Around line 121:
-        =back without =over
-
-    Around line 125:
-        You forgot a '=back' before '=head2'
-
-    Around line 127:
-        =back without =over
-
-    Around line 131:
-        You forgot a '=back' before '=head2'
-
-    Around line 133:
-        =back without =over
-
-    Around line 137:
-        You forgot a '=back' before '=head2'
-
-    Around line 139:
-        =back without =over
-
-    Around line 143:
-        You forgot a '=back' before '=head2'
-
-    Around line 145:
-        =back without =over
 
