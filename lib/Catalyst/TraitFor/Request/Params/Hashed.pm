@@ -4,7 +4,7 @@ use namespace::autoclean;
 use Moose::Role;
 use MooseX::Types::Moose qw/ HashRef /;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -13,7 +13,7 @@ like C<name[index]> as hashes for Catalyst::Request.
 
 =head1 VERSION
 
-Version is 0.02
+Version is 0.03
 
 =head1 SYNOPSIS
 

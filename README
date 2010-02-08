@@ -3,7 +3,7 @@ NAME
     "name[index]" as hashes for Catalyst::Request.
 
 VERSION
-    Version is 0.02
+    Version is 0.03
 
 SYNOPSIS
         #

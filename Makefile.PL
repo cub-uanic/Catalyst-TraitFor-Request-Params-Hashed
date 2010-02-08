@@ -23,10 +23,10 @@ author_requires 'Test::NoTabs';
 author_requires 'Test::Pod'           => '1.14';
 author_requires 'Test::Pod::Coverage' => '1.08';
 
-resources repository => 'http://github.com/cub-uanic/c-t-request-params-hashed/';
+resources repository => 'git://git.assembla.com/Catalyst-TraitFor-Request-Params-Hashed.git';
 
 tests 't/*.t';
-author_tests 't/author';
+author_tests 't/author/*.t';
 
 if ($Module::Install::AUTHOR) {
     system("pod2text lib/Catalyst/TraitFor/Request/Params/Hashed.pm > README") and die $!;
