@@ -137,25 +137,13 @@ sub hbody_params        { shift->hashed_body_parameters }
 
 Write tests.
 
+=head1 GIT REPOSITORY
+
+git clone git://github.com/cub-uanic/Catalyst-TraitFor-Request-Params-Hashed.git
+
 =head1 SEE ALSO
 
 L<Catalyst>, L<Catalyst::Request>, C<Catalyst::TraitFor::Request::BrowserDetect>
-
-=head1 SUPPORT
-
-=over 4
-
-=item * Report bugs or feature requests
-
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Catalyst-TraitFor-Request-Params-Hashed>
-
-L<http://www.assembla.com/spaces/Catalyst-TraitFor-Request-Params-Hashed/tickets>
-
-=item * Git repository
-
-git clone git://git.assembla.com/Catalyst-TraitFor-Request-Params-Hashed.git
-
-=back
 
 =head1 AUTHOR
 
@@ -163,7 +151,7 @@ Oleg Kostyuk, C<< <cub#cpan.org> >>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2009 Oleg Kostyuk.
+Copyright by Oleg Kostyuk.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published

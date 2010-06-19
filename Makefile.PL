@@ -23,7 +23,7 @@ author_requires 'Test::NoTabs';
 author_requires 'Test::Pod'           => '1.14';
 author_requires 'Test::Pod::Coverage' => '1.08';
 
-resources repository => 'git://git.assembla.com/Catalyst-TraitFor-Request-Params-Hashed.git';
+resources repository => 'git://github.com/cub-uanic/Catalyst-TraitFor-Request-Params-Hashed.git';
 
 tests 't/*.t';
 author_tests 't/author/*.t';
