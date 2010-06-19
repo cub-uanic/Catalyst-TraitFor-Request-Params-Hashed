@@ -1,5 +1,8 @@
 Revision history for Catalyst-TraitFor-Request-Params-Hashed
 
+0.04    2010-06-20 02:19:06
+        Switch repository back to Github
+
 0.03    2010-02-09 00:30:24
         Fix: repository path in Makefile.PL was incorrect
 
